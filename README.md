@@ -1,0 +1,2 @@
+# mush
+static web app.
