@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background-color: #f6faf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #edf2eb;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background-color: #8fb886;
+  border: 2px solid #edf2eb;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #5e8f52;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
