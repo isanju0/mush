@@ -3,7 +3,7 @@ import mushroomVid from "./mushroomVid.mp4";
 import mushroomPic from "./mushroomPic.jpeg";
 import mushbedPic from "./mushbedPic.jpeg";
 import mushPicklePic from "./mushPicklePic.png";
-import heroVid from "./heroVid.mp4";
+import heroVid from "./heroVid.MP4";
 
 export const navLinks = [
   { label: "Home", id: "home" },
