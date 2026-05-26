@@ -1,4 +1,5 @@
 import { Container, Fade, Stack, Typography } from "@mui/material";
+import AnimatedHeading from "./AnimatedHeading";
 
 function SectionWrapper({ id, eyebrow, title, subtitle, children }) {
   return (
@@ -13,20 +14,31 @@ function SectionWrapper({ id, eyebrow, title, subtitle, children }) {
           {eyebrow && (
             <Typography
               variant="overline"
-              sx={{ color: "primary.main", fontWeight: 700, letterSpacing: "0.08em" }}
+              sx={{
+                color: "primary.main",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+              }}
             >
               {eyebrow}
             </Typography>
           )}
           {title && (
-            <Typography variant="h2" sx={{ fontSize: { xs: "1.8rem", md: "2.4rem" } }}>
-              {title}
+            <Typography
+              variant="h2"
+              sx={{ fontSize: { xs: "1.8rem", md: "2.4rem" } }}
+            >
+              <AnimatedHeading>{title}</AnimatedHeading>
             </Typography>
           )}
           {subtitle && (
             <Typography
               variant="body1"
-              sx={{ maxWidth: 700, color: "text.secondary", fontSize: { xs: "0.98rem", md: "1.05rem" } }}
+              sx={{
+                maxWidth: 700,
+                color: "text.secondary",
+                fontSize: { xs: "0.98rem", md: "1.05rem" },
+              }}
             >
               {subtitle}
             </Typography>

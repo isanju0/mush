@@ -1,4 +1,9 @@
 import heroVideoFile from "./mush_hero.mp4";
+import mushroomVid from "./mushroomVid.mp4";
+import mushroomPic from "./mushroomPic.jpeg";
+import mushbedPic from "./mushbedPic.jpeg";
+import mushPicklePic from "./mushPicklePic.png";
+import heroVid from "./heroVid.mp4";
 
 export const navLinks = [
   { label: "Home", id: "home" },
@@ -13,22 +18,22 @@ export const products = [
     name: "Ragi Hot Chocolate",
     qty: "100g/250g/500g",
     price: "₹140 / pack",
-    image:
-      "https://images.unsplash.com/photo-1545022388-85b5f61c2c3d?auto=format&fit=crop&w=900&q=80",
+    image: mushroomPic,
+    // "https://images.unsplash.com/photo-1545022388-85b5f61c2c3d?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Mushroom Pickle",
     qty: "100g/250g/500g",
     price: "₹180 / pack",
-    image:
-      "https://images.unsplash.com/photo-1504545102780-26774c1bb073?auto=format&fit=crop&w=900&q=80",
+    image: mushPicklePic,
+    // "https://images.unsplash.com/photo-1504545102780-26774c1bb073?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Mushrooms Chutney Powder",
     qty: "100g/250g/500g",
     price: "₹260 / pack",
-    image:
-      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80",
+    image: mushroomPic,
+    // "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80",
   },
   {
     name: "Sprouted Ragi",
@@ -43,33 +48,32 @@ export const products = [
     price: "₹260 / pack",
     image:
       "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80",
-  },  
+  },
 ];
 
 export const storyImage =
   "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?auto=format&fit=crop&w=1200&q=80";
 
-export const heroVideo = heroVideoFile;
+export const heroVideo = heroVid;
 
 export const storySlides = [
   {
-    image: storyImage,
+    image: mushroomPic,
     title: "Our farm roots",
-    caption: "Started as a small family setup with a focus on clean and consistent mushroom cultivation.",
+    caption:
+      "Working hands-on with cultivation taught us patience, precision, and respect for nature. It shaped the foundation of everything we create today. As we connected more with conscious consumers and healthier lifestyles, our vision naturally expanded beyond farming.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1200&q=80",
+    image: mushbedPic,
     title: "Controlled growing",
     caption:
-      "We maintain ideal humidity, temperature, and hygiene to ensure quality from every growing batch.",
+      "We began crafting thoughtfully curated products made with ingredients we genuinely believed in. Every product from The Market Bowl carries the essence of where we started: careful sourcing, small-batch attention, and a commitment to quality without compromise.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
+    image: mushPicklePic,
     title: "Fresh delivery",
     caption:
-      "Harvested with care and packed quickly so homes and restaurants receive produce at peak freshness.",
+      "We believe wellness is not about excess. It is about intentional choices, comforting rituals, and food that feels both nourishing and indulgent. Today, The Market Bowl stands at the intersection of agriculture, tradition, and modern wellness — bringing together the authenticity of farm-rooted beginnings with the elegance of premium nourishment.",
   },
 ];
 

@@ -15,7 +15,9 @@ function StorySection() {
   }, []);
 
   const goToPrevious = () => {
-    setActiveIndex((prev) => (prev - 1 + storySlides.length) % storySlides.length);
+    setActiveIndex(
+      (prev) => (prev - 1 + storySlides.length) % storySlides.length,
+    );
   };
 
   const goToNext = () => {
@@ -27,13 +29,25 @@ function StorySection() {
       id="story"
       eyebrow="Our Story"
       title="Grown with patience, picked with care"
-      subtitle="What started as a small family growing setup is now a trusted local brand serving homes and restaurants."
+      subtitle="At The Market Bowl, our journey began close to the earth — with mushroom farming.
+      What started as a small effort to grow fresh, high-quality produce soon became a deeper exploration into mindful food, clean ingredients, and the way nourishment should truly feel: simple, honest, and refined."
     >
       <Paper
         elevation={1}
-        sx={{ overflow: "hidden", bgcolor: "background.paper", border: "1px solid #e6ece5" }}
+        sx={{
+          overflow: "hidden",
+          bgcolor: "background.paper",
+          border: "1px solid #e6ece5",
+        }}
       >
-        <Box sx={{ position: "relative", width: "100%", minHeight: { xs: 280, md: 420 }, bgcolor: "#111" }}>
+        <Box
+          sx={{
+            position: "relative",
+            width: "100%",
+            minHeight: { xs: 280, md: 420 },
+            bgcolor: "#111",
+          }}
+        >
           {storySlides.map((slide, index) => (
             <Box
               key={slide.title}
@@ -58,11 +72,12 @@ function StorySection() {
             sx={{
               position: "absolute",
               inset: 0,
-              background: "linear-gradient(to top, rgba(19,29,20,0.72), rgba(19,29,20,0.15))",
+              background:
+                "linear-gradient(to top, rgba(19,29,20,0.72), rgba(19,29,20,0.15))",
             }}
           />
 
-          <Stack
+          {/* <Stack
             direction="row"
             justifyContent="space-between"
             sx={{ position: "absolute", inset: 0, alignItems: "center", px: { xs: 1, md: 2 } }}
@@ -81,20 +96,28 @@ function StorySection() {
             >
               {">"}
             </IconButton>
-          </Stack>
+          </Stack> */}
         </Box>
 
         <Box sx={{ p: { xs: 2.4, md: 3.2 }, borderTop: "1px solid #e6ece5" }}>
           <Typography
             key={`title-${activeIndex}`}
             variant="h6"
-            sx={{ mb: 1, color: "text.primary", animation: "fadeSlide 600ms ease" }}
+            sx={{
+              mb: 1,
+              color: "text.primary",
+              animation: "fadeSlide 600ms ease",
+            }}
           >
             {storySlides[activeIndex].title}
           </Typography>
           <Typography
             key={`caption-${activeIndex}`}
-            sx={{ color: "text.secondary", lineHeight: 1.75, animation: "fadeSlide 700ms ease" }}
+            sx={{
+              color: "text.secondary",
+              lineHeight: 1.75,
+              animation: "fadeSlide 700ms ease",
+            }}
           >
             {storySlides[activeIndex].caption}
           </Typography>

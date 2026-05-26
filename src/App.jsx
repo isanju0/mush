@@ -8,13 +8,15 @@ import ProductsSection from "./sections/ProductsSection";
 import StorySection from "./sections/StorySection";
 import TestimonialsSection from "./sections/TestimonialsSection";
 import FounderNote from "./sections/FounderNote";
+import FounderNote2 from "./sections/FounderNote2";
 
 function App() {
   return (
     <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>
       <Header />
       <HeroSection />
-      <FounderNote />
+      {/* <FounderNote /> */}
+      <FounderNote2 />
       <ProductsSection />
       <StorySection />
       <TestimonialsSection />
